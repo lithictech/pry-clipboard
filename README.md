@@ -1,14 +1,12 @@
 # pry-clipboard
 
-[![Build Status](https://secure.travis-ci.org/hotchpotch/pry-clipboard.png?branch=master)](http://travis-ci.org/hotchpotch/pry-clipboard)
-
 Pry clipboard utility.
 
 Copy history/result to clipboard.
 
 ## Installation
 
-    $ gem install pry-clipboard
+    $ gem install pry-clipboard2
 
 ## Recommend setting
 
@@ -16,7 +14,7 @@ Your ~/.pryrc
 
 ```ruby
 begin
-  require 'pry-clipboard'
+  require 'pry-clipboard2'
   # aliases
   Pry.config.commands.alias_command 'ch', 'copy-history'
   Pry.config.commands.alias_command 'cr', 'copy-result'
@@ -28,7 +26,7 @@ end
 ## Usage
 
 ```ruby
-require 'pry-clipboard'
+require 'pry-clipboard2'
 copy-history --help
 copy-result --help
 paste --help
@@ -137,5 +135,4 @@ def hello
 
 ## Author
 
-* Yuichi Tateno
-
+* Rob Galanakis, based on work by Yuichi Tateno
